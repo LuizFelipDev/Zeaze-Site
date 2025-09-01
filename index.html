@@ -69,8 +69,8 @@
                     <div class="carousel-caption top-0 mt-4">
                         <h4 class="mt-5 display-4 fw-bolder">Zeaze Contabilidade</h4>
                         <p class="mt-4 fs-5">Um lugar seguro para sua empresa</p>
-                        <form onsubmit="abrirMaps(event)">
-                        <button class="btn btn-primary px-4 py-2 fs-8 mt-5">Nosso Endereço</button>
+                        <form onsubmit="abraEmpresa(event)">
+                            <button class="btn btn-primary px-4 py-2 fs-8 mt-5">Abra sua Empresa</button>
                         </form>
                     </div>
                 </div>
@@ -247,12 +247,15 @@
             window.open(url, '_blank')
         }
 
-        function abrirMaps(event) {
+        function abraEmpresa(event) {
             event.preventDefault()
 
-            const url = `https://maps.app.goo.gl/GCK94GF5v7V7Vonq9`
+            const telefone = '5513997043827'
 
-           window.open(url, '_blank') 
+            const texto = `Olá! Gostaria de abrir minha empresa.`
+            const url = `https://wa.me/${telefone}?text=${texto}`
+
+            window.open(url, '_blank')
         }
 
 
@@ -262,7 +265,7 @@
     <footer>
         <p>2025 - Zeaze Contabilidade. Todos os Direitos Reservados</p>
         <p class="endereco">Av. Dr. Fernando Costa, 395 - Centro, Pariquera-Açu - SP, 11930-000</p>
-        <a href="mailto:zeaze@zeaze.com.br" class="mail">Nosso E-mail</a>
+        <a href="mailto:zeaze@zeaze.com.br" class="mail">zeaze@zeaze.com.br</a>
     </footer>
 
 </body>
