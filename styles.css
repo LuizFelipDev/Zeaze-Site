@@ -86,7 +86,7 @@ body {
 .c-img {
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.6);
+    filter: brightness(0.45);
 }
 
 .btn-primary {
@@ -252,7 +252,7 @@ footer {
 
 .mail {
     color: var(--claro);
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease;
 }
 
 .mail:hover {
