@@ -16,6 +16,7 @@ html {
     --escuro: #000000e5;
     --maisescuro: #000000;
     --claro: #ffffff;
+    --maisClaro: rgba(255, 255, 255, 0.8);
     --vidro: rgba(164, 255, 149, 0.05);
 }
 
@@ -241,25 +242,114 @@ body {
     box-shadow: 0 5px 15px rgba(164, 255, 149, 0.5);
 }
 
-
-
 footer {
     background: radial-gradient(circle, rgba(4, 146, 26, 1) 20%, rgba(164, 255, 149, 1) 100%);
-    color: var(--escuro);
-    text-align: center;
-    padding: 2rem;
-}
-
-.mail {
     color: var(--claro);
-    transition: 0.5s ease;
+
 }
 
-.mail:hover {
-    color: var(--secundaria);
-    margin-top: 20px;
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1.5rem;
+    place-items: center;
 }
 
-.endereco {
-    margin-top: 20px;
+.footer-contacts h5 {
+    margin-bottom: 1.25rem;
+}
+
+.footer-contacts p {
+    font-size: 1em;
+    margin-bottom: 1.25rem;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.footer-social-media .footer-link i {
+    font-size: 1.25rem;
+}
+
+.footer-social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--claro);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.footer-social-media .footer-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(164, 255, 149, 0.5);
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    text-decoration: none;
+}
+
+#whatsApp {
+    background-color: #25d366;
+    text-decoration: none;
+}
+
+#facebook {
+    background-color: #3b5998;
+    text-decoration: none;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.footer-subscribe p {
+    font-size: 1em;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(164, 255, 149, 0.3);
+}
+
+.input-group input {
+    all: unset;
+    padding: 0.75rem;
+}
+
+
+.input-group button {
+    background-color: var(--primaria);
+    border: none;
+    color: var(--claro);
+    padding: 0px 1.25rem;
+    font-size: 1.25rem;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.input-group button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(164, 255, 149, 0.5);
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
