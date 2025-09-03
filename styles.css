@@ -255,19 +255,24 @@ footer {
     place-items: center;
 }
 
-.footer-contacts h5 {
-    margin-bottom: 1.25rem;
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .footer-contacts p {
     font-size: 1em;
-    margin-bottom: 1.25rem;
+}
+
+h5 {
+    font-size: 1.5rem;
 }
 
 .footer-social-media {
     display: flex;
     gap: 2rem;
-    margin-top: 1.5rem;
+    
 }
 
 .footer-social-media .footer-link i {
@@ -305,45 +310,29 @@ footer {
     text-decoration: none;
 }
 
-.footer-subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1rem;
+.email .email-link i {
+    font-size: 1.25rem;
 }
 
-.footer-subscribe p {
-    font-size: 1em;
-}
-
-.input-group {
+.email .email-link {
     display: flex;
     align-items: center;
-    border-radius: 4px;
-    background-color: rgba(164, 255, 149, 0.3);
-}
-
-.input-group input {
-    all: unset;
-    padding: 0.75rem;
-}
-
-
-.input-group button {
-    background-color: var(--primaria);
-    border: none;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
     color: var(--claro);
-    padding: 0px 1.25rem;
-    font-size: 1.25rem;
-    height: 100%;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 50%;
     transition: all 0.5s ease;
 }
 
-.input-group button:hover {
+.email .email-link:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(164, 255, 149, 0.5);
+}
+
+#mail {
+     background-color: #045f12;
+    text-decoration: none;
 }
 
 .footer-copyright {
@@ -352,4 +341,11 @@ footer {
     font-size: 1rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
